@@ -1,0 +1,388 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+html{
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  
+    font-family: Roboto slab;
+    line-height: 160%;
+    margin-bottom: 150px;
+  }
+  /* css of header  */
+  header {
+    background-color:rgb(241, 190, 95);
+    top:  0;
+    position:fixed;
+    width: 100%; 
+    z-index: 100;
+    font-family:'Times New Roman', Times, serif;
+    padding: 40px;
+    text-align: center;  
+  }
+  
+  #title-1{
+    font-size: 44px;
+    text-align: center;
+    text-transform: uppercase;
+    margin:15px auto;
+  }
+
+  #leul{
+    color:rgb(123, 50,50);
+    
+  }
+  #Academy{
+    color: rgb(81, 188, 81)
+  }
+  .menu-list{
+    /* padding:25px; */
+    margin:30px auto;
+  
+  
+  }
+  .menu-list li{
+    text-align: center;
+    display: inline-block;
+    margin-right: 20px;
+    
+  }
+  .menu-list li a {
+    color:white;
+    text-decoration:none;
+    margin-top: 10px;
+  }
+  .active{
+    
+    border-bottom:3px solid  red;
+  }
+ 
+  main{
+    padding: 30px 50px 30px 50px ;
+    margin-top: 200px;
+  }
+  .page-section{
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 5px;
+  }
+  h1{
+    text-transform: uppercase;
+    text-align: center;
+
+  }
+  .introduction{
+  background-color:rgb(54, 49, 64);
+  color:white;
+
+  }
+  .introduction section {
+    margin-top: 10px; /* or 0px for no margin */
+  }
+  .section2{
+    background-color:#382652;
+    color:white
+   
+  }
+img{
+  width: 10%;
+ 
+}
+.technologies{
+  padding: 30px;
+  background-color:rgb(214, 130, 50);
+  color:white;
+}
+.tech-1{
+  background-color:rgb(42, 28, 94);
+}
+.tech-2{
+  background-color:rgb(119, 91, 219);
+
+}
+.meters{
+  background-color:rgb(34,32, 32);
+  color:white;
+}
+.progresses{
+  background-color:rgb(107,57,127);
+  color:white;
+}
+.details-summary{
+  background-color:rgb(201, 130, 37);
+}
+
+  .wrapper{
+    position: relative;
+    background-color:lightblue;
+    height: 700px;
+    width: 100%;
+   }
+    
+  .box{
+    position:absolute;
+    border:1px groove red;
+    display: inline-block;
+    padding: 100px;
+    width: 150px;
+    height:150px;
+    margin:0x;
+    line-height: 75px;
+    text-align:center;
+    border: 8px solid white;
+    font-size: 68px;
+    color:white;
+    font-size: 100px;
+   
+  }
+  .web-tech{
+    position:absolute;
+    border:1px groove red;
+    display: inline-block;
+    padding: 100px;
+    width: 150px;
+    height:150px;
+    margin:0x;
+    line-height: 75px;
+    text-align:center;
+    color:white;
+    left: 450px;
+    top: 240px;
+   
+  }
+ 
+  #html{
+    background-color:rgb(216, 111, 111);
+    }
+  #css{
+    background-color: aqua;
+    left: 600px;
+  }
+  
+#js{
+  background-color: rgb(29, 129, 129);
+  left: 750px;
+
+  }
+  #box1{
+    background-color:rgb(97, 222, 97);
+    bottom: 0;
+    left: 0;
+    
+ }
+ #box2{
+ background-color: rgb(213, 89, 89); 
+ left: 0;
+ top:o;
+
+ }
+ #box3{
+  background-color:rgb(217, 217, 80);
+  top:0;
+  right: 0;
+
+ }
+ #box4{
+  background-color:purple;
+  right: 0;
+  bottom:0
+ }
+ 
+
+  .icon-link {
+    margin-right: 10px;
+  }
+    .vedio-wrapper{
+      text-align: center;
+      /* margin-left: 15%; */
+    }
+  video {
+  
+    max-width: 75%;
+    text-align: center;
+  }
+  .audio{
+    margin: 25px auto;
+
+  }
+.audio h2 {
+  margin: 5px;
+  font-weight: 400;
+} 
+/* table css */
+table, th, td {
+    border: 2px solid;
+    border-collapse: collapse;
+    
+}
+thead{
+    background-color:rgb(94, 0, 128);
+    color:white;
+}
+table{
+    width: 50%;
+    margin: 100px auto;
+    color:rgb(94, 0, 128);
+    font-weight: 300;
+
+}
+td{
+    padding-left: 10px;
+
+}
+
+footer{
+  position: absolute;
+  width: 100%;
+  bottom:0;
+ 
+}
+
+
+.footer-wrapper{
+  background-color:rgb(241, 190, 95);
+  text-align: center;
+  padding: 40px;
+ 
+
+}
+.copy-part{
+text-align: center;
+margin: 0;
+}
+
+.form-group{
+  margin: 10px auto ;
+  
+}
+form {
+  width: 55%;  
+}
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="number"], textarea,select {
+  display: block;
+  width: 76%;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+  border-radius:3px ;
+  border:2px solid rgba(203, 93, 93 ,0.25) ;
+  margin-top: 3px;
+
+
+}
+input[type="text"]:hover,
+input[type="date"]:hover,
+input[type="email"]:hover,
+input[type="number"], textarea,select:hover {
+  display: block;
+  width: 76%;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+  border-radius:3px ;
+  border:2px solid rgb(203, 93, 93 ) ;
+  margin-top: 3px;
+}
+.btn{
+  background-color:rgb(116, 218, 116);
+  color:white;
+  padding:10px 25px;
+  border-radius:5px; 
+  border:2px solid rgb(116, 218, 116); 
+  font-weight: 900;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.fa-brands{
+  font-size: 18px ;
+}
+.icon-link{
+  margin: 10px;
+  text-align:left ;
+}
+.fa-dropbox , .fa-phone ,.fa-envelope{
+margin: 10px;
+}
+/* course css  */
+/* Course Section Styles */
+.course-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 800px;
+}
+.course-content{
+  text-align: center;
+  margin: 50px auto;
+}
+.course{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.course-section h2 {
+  font-size: 28px;
+  color: #4caf50;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.course-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.course-item {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-left: 20px 20px ;
+  width: 95%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.course-item h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.course-item p {
+  font-size: 16px;
+  color: #666;
+}
+
+.course-item i {
+  font-size: 40px;
+  color: #4caf50;
+  margin-bottom: 10px;
+}
+/* making a web site Responsive  */
+@media all  and (max-width: 600px) {
+  span{
+    font-size: 22px;
+  }
+  a{
+    font: 10px ;
+  } 
+
+}
+
+

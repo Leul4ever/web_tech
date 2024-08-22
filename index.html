@@ -4,211 +4,246 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leul Academy</title>
-    <style>
-      body {
-        background-color: rgb(192, 161, 220);
-      }
-      header {
-        background-color: rgb(192, 161, 220);
-      }
-      .icon-link {
-        margin-right: 10px;
-      }
-      video {
-        max-width: 75%;
-      }
-    </style>
     <!-- Include Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      integrity="sha512-Fo3rlrZj/k7ujTnHqT+R3FvAJA8JcT/J5nQ+zZacj/NPCyewOrLbsc5GxD6Ifw5Jk+0b12RSKU42Elp6PXLKg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');</style>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');</style>
+    <style> @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');</style>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');</style>
+      <style>@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');</style>
+      <style>@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+      </style>
+      <style>@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); </style>
+      <style> 
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+        </style>      
+         
+
+
   </head>
 
   <body>
-    <header>
-      <h2 id="title-1" class="title" style="color: green; font-size: 64px">
-        <span style="color: rgb(123, 50, 50)">Leul</span>
-        <span style="color: rgb(81, 188, 81)"> Academy</span>
-      </h2>
-    </header>
-
-    <main>
-      <div>
-        <h2>Introduction</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt aut
-          cupiditate totam soluta, animi repudiandae quo ipsa commodi? Eveniet
-          quod corporis cum! Quam quisquam deserunt saepe dolorum impedit
-          dolores magni.
-        </p>
-      </div>
-      <div>
-        <h2>Front End Technologies</h2>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
+    <div id="root">
+      <header>
+        <h2 id="title-1" class="title" style="color: green; font-size: 64px">
+          <span id="leul" style="color: rgb(123, 50, 50)">Leul</span>
+          <span id="Academy"color: rgb(81, 188, 81)"> Academy</span>
+        </h2>
+        <div><ul class="menu-list" >
+          <li><a class="active" href="#">Home </a></li>
+          <li><a href="about.html">About </a></li>
+          <li><a href="course.html">Course  </a></li>
+          <li><a href="project.html">Project</a></li>
+          <li><a href="apply.html">Apply </a></li>
+          <li><a href="contacts.html">Contacts </a></li>
         </ul>
       </div>
-      <div>
-        <img
-          src="./assets/images/html.jpeg"
-          alt="html image "
-          style="width: 10%"
-        />
-        <img
-          title="css Logo"
-          src="./assets/images/css.png"
-          alt="css image "
-          style="width: 10%"
-        />
-        <img
-          src="./assets/images/js.png"
-          alt="java script image "
-          style="width: 10%"
-          title="java script logo"
-        />
-      </div>
-      <div>
-        <h2>JavaScript Frameworks</h2>
-        <ol>
-          <li>React</li>
-          <li>Vue</li>
-          <li>Angular</li>
-        </ol>
-      </div>
-
-      <div>
-        <h2>Back End Technologies</h2>
-        <ol>
-          <li>Python</li>
-          <li>PHP</li>
-          <li>Node.js</li>
-          <li>Java</li>
-        </ol>
-      </div>
-
-      <div>
-        <h2>YouTube</h2>
-        <div>
-          <iframe
-            width="640"
-            height="360"
-            src="https://www.youtube.com/embed/o4YyppCCF4E"
-            title="30 min of country gospel song!"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
+       
+        </header>
+         <main>
+       
+          <div  class="page-section introduction">
+          <h1>Introduction</h1>
+            <section >
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum amet eaque quod, ipsum doloribus dolore accusantium nesciunt eligendi repellendus officia corporis molestias qui quas labore maiores similique assumenda asperiores rem vero totam esse deserunt ex. A dolor nisi vero, qui dicta commodi neque itaque quam deleniti perspiciatis excepturi dolorum velit nulla sunt suscipit vel totam cumque accusantium deserunt fuga molestiae quisquam impedit, eaque vitae! Temporibus, voluptates! Fuga alias nesciunt, sit minima magni molestias sapiente expedita! Alias voluptatibus blanditiis beatae adipisci aut delectus id quo, ratione provident reprehenderit sint possimus debitis commodi! Corporis soluta nisi itaque animi tempore? Impedit, suscipit voluptas?</p>
+            </section>
+            
         </div>
-      </div>
-      <div>
-        <h2>Video</h2>
-        <video src="./assets/vedios/vedios.mp4" controls></video>
-      </div>
-      <div>
-        <h2>Podcast</h2>
-        <audio
-          src="./assets/audios/_ድግስ አዘጋጅቷል_ Digis Azegajitual lyrics video by Dawit Getachew from Volume 1.mp3"
-          controls
-        ></audio>
-      </div>
-      <div>
-        <h2>Meter tag that used for statistics</h2>
-        Disk D: <meter value="34" min="0" max="100">35%</meter><br />
-        Disk E: <meter value="60" min="13" max="100">60%</meter>
-      </div>
-      <div>
-        <h2>Progress</h2>
-        HTML <progress min="0" max="100" value="80">80%</progress><br />
-        CSS <progress min="0" max="100" value="70">70%</progress>
-      </div>
-      <div>
-        <details>
-          <summary>HTML</summary>
+        <div class=" section2 page-section ">
+
+          <h1>Section2</h1>
+            <section>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis numquam consectetur adipisci mollitia repudiandae odit deserunt, fugit laboriosam officia quisquam reprehenderit necessitatibus aspernatur nam aperiam. Nisi sit laboriosam necessitatibus tempora minus provident voluptatibus. Culpa ullam, pariatur quae quisquam laudantium dicta mollitia consequuntur fugiat aliquid dolorem iusto id quod facilis, eos magnam, itaque voluptatem veritatis quo voluptatum ducimus similique modi tenetur. Animi quas asperiores in nostrum fugit illum saepe obcaecati quis! Sapiente sunt, id laudantium beatae officia iste ex in tempore quasi, accusamus, aut molestiae similique. Magni nam quisquam mollitia quidem voluptas saepe, veniam quibusdam maiores quae dolor aliquid, provident sequi!</p>
+            </section>
+        </div>
+
+        <div class="page-section technologies tech-1">
+          <h2>Front End Technologies</h2>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+         
+            <img
+              src="./assets/images/html.jpeg"
+              alt="html image "
+              style="width: 10%"
+            />
+            <img
+              title="css Logo"
+              src="./assets/images/css.png"
+              alt="css image "
+              style="width: 10%"
+            />
+            <img
+              src="./assets/images/js.png"
+              alt="java script image "
+              style="width: 10%"
+              title="java script logo"
+            />
+          
+            <h2>JavaScript Frameworks</h2>
+            <ol>
+              <li>React</li>
+              <li>Vue</li>
+              <li>Angular</li>
+            </ol>
+           
+           <img src="./assets/images/angular.png" alt="angular">
+           <img src="./assets/images/vha.jpeg" alt="vue">
+           <img src="./assets/images/React.png" alt="react">
+        
+        </div>
+        
+       <div class="  page-section technologies tech-2">
+          <h2>Back End Technologies</h2>
+          <ol>
+            <li>Python</li>
+            <li>PHP</li>
+            <li>Node.js</li>
+            <li>Java</li>
+          </ol>
+         <img src="./assets/images/java.png" alt="java">
+         <img src="./assets/images/mog.jpeg" alt="mongo">
+         <img src="./assets/images/node.png" alt="node">
+
+
+        </div>
+
+      <div class=" page-section vedio-wrapper">
+          <h2>YouTube</h2>
+          <div>
+            <iframe
+              width="640"
+              height="360"
+              src="https://www.youtube.com/embed/o4YyppCCF4E"
+              title="30 min of country gospel song!"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="page-section">
+          <h2>Video</h2>
+          <div class="vedio-wrapper">
+            <video src="./assets/vedios/vedios.mp4" controls></video>
+          </div>
+          
+        </div>
+        <div class=" apage-section ">
+          <h1>Podcast</h1>
+          <div class="audio">
+            <h2> Epsoide1</h2>
+          <audio src="./assets/audios/Kaleab Mengistu @Kingdom Sound Worship Night 2023 Mihretun Asibe Original Song By Bethelhem Tezera.mp3" controls></audio>
+          </div>
+       
+          <div class="audio">
+            <h2> Epsoide2</h2>
+            <audio
+            src="./assets/audios/_ድግስ አዘጋጅቷል_ Digis  Azegajitual lyrics video by Dawit Getachew from Volume 1.mp3"
+            controls
+          ></audio>
+          </div>
+      
+          <div class="audio">
+            <h2> Epsoide3</h2>
+            <audio src="/assets/audios/3. barakate tasefaayee Abet Mihretih  'abeete meheratehe PhonicMind mix preview.mp3"
+            controls></audio>
+          </div>
+            </div>
+        <div class="page-section meters">
+          <h2>Meter tag that used for statistics</h2>
+          Disk D: <meter value="34" min="0" max="100">35%</meter><br />
+          Disk E: <meter value="60" min="13" max="100">60%</meter>
+        </div>
+        <div class="page-section progresses">
+          <h2>Progress</h2>
+          HTML <progress min="0" max="100" value="80">80%</progress><br />
+          CSS <progress min="0" max="100" value="70">70%</progress>
+        </div>
+        <div  class="page-section details-summary">
+          <details>
+            <summary>HTML</summary>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum
+              repellendus veritatis vero quis officiis voluptas asperiores
+              consectetur quos magnam, quia dolore quibusdam distinctio cum,
+              numquam adipisci animi repudiandae ab quisquam.
+            </p>
+            
+          </details>
+          <details>
+          <summary>css</summary>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum
             repellendus veritatis vero quis officiis voluptas asperiores
             consectetur quos magnam, quia dolore quibusdam distinctio cum,
             numquam adipisci animi repudiandae ab quisquam.
           </p>
+          
         </details>
-      </div>
-      <div>
-        <h2>Fill Form</h2>
-        <form>
+        <details>
+          <summary>Java script</summary>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum
+            repellendus veritatis vero quis officiis voluptas asperiores
+            consectetur quos magnam, quia dolore quibusdam distinctio cum,
+            numquam adipisci animi repudiandae ab quisquam.
+          </p>
+          
+        </details>
+      
+      
+        </div>
+       
+        </div>
+        <div class="page-section">
+
+          <h2>Address</h2>
           <div>
-            <label for="first-name"> first Name </label
-            ><input type="text" placeholder="first" /><br />
-            <label for="last-name ">Last Name </label
-            ><input type="text" placeholder="Last Name " /><br />
-            <label for="email">Email</label
-            ><input type="email" placeholder="Email" /><br />
-            <label for="for-company">company</label
-            ><input type="text" placeholder="Company" /><br />
-            <label for="for-age ">age</label
-            ><input type="age" placeholder="age" /><br />
-            <label for="for-dateofbirth">Date of Birth</label
-            ><input type="date" placeholder="Date of Birth" />
+           
+            <Address>
+              Hossana ,Ethiopia <br>
+              <div class="icon-link">
+                <i class="fa-brands fa-dropbox"></i>POBOX:3838 <br>
+                <i class="fa-solid fa-phone"></i> Tel:+251943366036 <br>
+                <i class="fa-regular fa-envelope"></i>Email : leul0593@gmail.com 
+              </div>
+       
+            </Address>
           </div>
-          <div>
-            <p>what are your skills</p>
-            <input type="checkbox" value="" id="html" />
-            <label for="for-html ">HTML</label><br />
-            <input type="checkbox" id="css" /><label for="for-css">CSS</label
-            ><br />
-            <input type="checkbox" />
-            <label for="for-javascript">JavaScript</label>
+
+        </div>
+      
+      </main>
+      <footer>
+        <div class="footer-wrapper">
+          <div >
+            <a href="https://github.com/Liul-Abera" target="_blank" class="icon-link">
+              <i class="fa-brands fa-square-github"></i> GitHub
+            </a>
+            
+            <a href="https://www.facebook.com/leul.abera.3910/" target="_blank" class="icon-link">
+              <i class="fa-brands fa-facebook"></i> Facebook
+            </a>
+            
+            <a href="https://www.linkedin.com/in/leul-abera-418791259/" target="_blank" class="icon-link">
+              <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+            <div class="copy-part"><small>copy right &copy;2024 | Leul Abera </small></div>
+            
           </div>
-          <div>
-            <p>Gender</p>
-            <input type="radio" name="gender" id="male" />
-            <label for="male ">Male </label><br />
-            <input type="radio" name="gender" id="female" />
-            <label for="famle ">female </label><br />
-            <input type="radio" id="other" name="gender" />
-            <label for="other  "> other</label><br />
-          </div>
-          <div>
-            <p>select country</p>
-            <select name="country" id="country">
-              <option value="">-- Select Country --</option>
-              <option value="Ethiopia ">Ethiopia</option>
-              <option value="kenya ">Kenya</option>
-              <option value="somalia ">Somalia</option>
-              <option value="Ethiopia ">Djiubouti</option>
-            </select>
-          </div>
-        </form>
-      </div>
-    </main>
-    <footer>
-      <div>
-        <a
-          href="https://github.com/Liul-Abera"
-          target="_blank"
-          class="icon-link"
-          ><i class="fa-brands fa-github"></i>GitHub</a
-        >
-        <a
-          href="https://www.facebook.com/leul.abera.3910/"
-          target="_blank"
-          class="icon-link"
-          >Facebook</a
-        >
-        <a
-          href="https://www.linkedin.com/in/leul-abera-418791259/"
-          target="_blank"
-          class="icon-link"
-          >LinkedIn</a
-        >
-      </div>
-      <div><small>&copy;2024</small></div>
-    </footer>
+          
+        </div>
+ 
+      </footer>
+    
+    </div>
+        
+    </div>
   </body>
 </html>
